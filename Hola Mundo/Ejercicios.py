@@ -4,7 +4,7 @@ nombre="Juan Perez"
 print("Hola %s, tu balance es de %.2f$"%(nombre,balance))
 balance=str(balance)
 type(balance)
-balance.__len__
+balance.__len__()
 balance=bool(balance)
 type(balance)
 balance=int(balance)
