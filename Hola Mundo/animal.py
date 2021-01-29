@@ -5,6 +5,6 @@ class animal:
         self.__name__=especie
         
     
-    def tostring(self):
+    def __str__(self):
         print(self.color+" "+self.numpatas+" "+self.__name__)
     
