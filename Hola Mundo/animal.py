@@ -6,5 +6,4 @@ class animal:
         
     
     def __str__(self):
-        print(self.color+" "+self.numpatas+" "+self.__name__)
-    
+        return self.color+" "+self.numpatas+" "+self.__name__  

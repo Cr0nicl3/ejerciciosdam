@@ -1,14 +1,21 @@
 import animal
 class caja:
-    def __init__(self, *animales,lastid):
-        self.animales=animal(animales)
-        self.id=lastid+1
+    staticid=0
+    def __init__(self,lastid,*animales):
+        self.animales= []
+        for i in animales:
+            animales+=i
+        self.id=staticid
+        staticid+=1
     
     def __str__(self):
-        print("Id: "+self.id)
-        for i in range(self.animales.__len__()):
-            self.animales[i].__str__()
+        string=string+"Id: "+self.id        
+        for i in self.animales:
+            string=string+i.__str__()
+        return string
 
     def animales_por_patas(self,numero_patas):
-        for i in range(self.animales.__len__()):
-            if(self.animales[i].__str__())
+        lista=[]
+        for i in animales:
+            if(animales.patas==numero_patas)lista+=i
+        return lista
