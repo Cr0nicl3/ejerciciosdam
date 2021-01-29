@@ -19,3 +19,24 @@ while string!="salir":
     if string=="salir":
         break
     print(string)
+
+string="ana"
+palin=True
+for i in range(string.__len__()):
+    if(i==0):
+        i=1
+    palin=(string[i]==string[-i-1])
+    if(not palin):
+        print("No es un palindromo")
+        break
+
+if (palin):
+    print("Es un palindromo")
+
+import re
+string=input()
+for i in range(string.__len__()):
+    if(i==0):i=1
+        
+    r1=re.findall(string[i],string)
+    print(r1.__len__())
